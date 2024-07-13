@@ -7,8 +7,10 @@ public class AsteriskLogger implements Logger {
     @Override
     public void log(String info) {
         String date = dateFormat.format(new Date());
+        System.out.println("****************");
         System.out.println(date + " - LOG:");
         System.out.println("***" + info + "***");
+        System.out.println("****************");
     }
 
     @Override
